@@ -2,7 +2,7 @@ package MooseX::Types::CNPJ;
 use strict;
 use warnings;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our $AUTHORITY = 'CPAN:TBR';
 
 use MooseX::Types -declare => ['CNPJ'];
@@ -15,11 +15,10 @@ sub _validate_cnpj {
 }
 
 subtype CNPJ,
-  as Str, where { _validate_cnpj($_) };
+  as Str, 
+  where { _validate_cnpj($_) },
+  message { 'CNPJ is invalid' };
 
-coerce CNPJ
-  # someone's bound to try it
-  from Str, via { uc };
 
 1;
 
