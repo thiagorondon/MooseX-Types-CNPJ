@@ -48,6 +48,36 @@ No coercion is attempted.
 
 None by default, you'll usually want to request C<CNPJ> explicitly.
 
+=head1 SUPPORT
+
+You can find documentation for this module with the perldoc command.
+
+    perldoc MooseX::Types::CNPJ
+
+You can also look for information at:
+
+=over 4
+
+=item * AnnoCPAN: Annotated CPAN documentation
+
+L<http://annocpan.org/dist/MooseX-Types-CNPJ>
+
+=item * CPAN Ratings
+
+L<http://cpanratings.perl.org/d/MooseX-Types-CNPJ>
+
+=item * RT: CPAN's request tracker
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=MooseX-Types-CNPJ>
+
+=item * Search CPAN
+
+L<http://search.cpan.org/dist/MooseX-Types-CNPJ>
+
+=back
+
+
+
 =head1 AUTHOR
 
 Thiago Rondon C<< <thiago@aware.com.br> >>
